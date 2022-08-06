@@ -1,0 +1,180 @@
+body{
+    background-image: radial-gradient(circle at bottom left, hsl(135, 100%, 50%), hsl(135, 45%, 31%));
+    min-height: 100vh;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+main{
+    display: grid;
+    place-items: center;
+    max-width: 25rem;
+    margin: 4rem auto;
+    color: WHITE;
+}
+
+.input-side{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 2rem 0;
+}
+
+.input-side input{
+    width: 70%;
+    padding: .3rem 1rem;
+    outline: none;
+}
+
+.input-side button{
+    display: inline-block;
+    border: none;
+    padding:  .4rem 1rem;
+    border-radius: .2rem;
+    color: white;
+    background-color: hsl(135, 93%, 41%);
+    font-weight: 700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-border-radius: .2rem;
+    -moz-border-radius: .2rem;
+    -ms-border-radius: .2rem;
+    -o-border-radius: .2rem;
+}
+
+.list-items{
+    width: 90%;
+}
+
+.list-items .items{
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding-inline: 1rem;
+    background-image: radial-gradient(circle at bottom left, hsl(135, 93%, 31%), hsl(135, 93%, 51%));
+    transition: .15s ease-in;
+    -webkit-transition: .15s ease-in;
+    -moz-transition: .15s ease-in;
+    -ms-transition: .15s ease-in;
+    -o-transition: .15s ease-in;
+}
+
+
+.list-items .items p{
+    margin-right: auto;
+    word-break: break-all;
+    line-height: 1.7;
+}
+
+.list-items .items img:not(:last-of-type){
+    margin-right: .5rem;
+}
+
+
+.clear{
+    text-align: center;
+}
+
+.done{
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+/* animations  */
+@keyframes move {
+    from{
+        transform: rotate(-10deg);
+        -webkit-transform: rotate(-10deg);
+        -moz-transform: rotate(-10deg);
+        -ms-transform: rotate(-10deg);
+        -o-transform: rotate(-10deg);
+}
+
+to{
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(10deg);
+    -ms-transform: rotate(10deg);
+    -o-transform: rotate(10deg);
+}
+}
+
+/* hover  */
+.list-items .items img:hover{
+    animation: move 3s linear;
+    -webkit-animation: move .3s ease-in;
+    cursor: pointer;
+}
+
+.list-items .items:hover{
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    animation: glow-bg 1s ease-in-out infinite alternate-reverse;
+    -webkit-animation: glow-bg 1s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes glow-bg {
+    from{
+        box-shadow: 0rem 0rem 1rem hsl(135, 93%, 61%);
+    }
+
+    to{
+        box-shadow: 0rem 0rem 1rem hsl(135, 93%, 31%);
+    }
+}
+
+.input-side button:hover{
+    cursor: pointer;
+    background-color: hsl(135, 100%, 37%);
+}
+
+
+/* @media screen and (min-width:500px) {
+    .input-side{
+        width: 100%;
+        text-align: center;
+        margin: 0 0 2rem 0;
+    }
+    
+    .input-side input{
+        width: 70%;
+        padding: .3rem 1rem;
+        outline: none;
+    }
+    
+    .input-side button{
+        display: inline-block;
+        border: none;
+        padding:  .4rem 1.5rem;
+        border-radius: .2rem;
+        color: white;
+        background-color: hsl(135, 93%, 41%);
+        font-weight: 700;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        -webkit-border-radius: .2rem;
+        -moz-border-radius: .2rem;
+        -ms-border-radius: .2rem;
+        -o-border-radius: .2rem;
+    }
+    
+    .list-items{
+        width: 90%;
+    }
+    
+    .list-items .items{
+        display: flex;
+        align-items: center;
+        margin-top: 1rem;
+        padding-inline: 1rem;
+        background-image: radial-gradient(circle at bottom left, hsl(135, 93%, 31%), hsl(135, 93%, 51%));
+        transition: .15s ease-in;
+        -webkit-transition: .15s ease-in;
+        -moz-transition: .15s ease-in;
+        -ms-transition: .15s ease-in;
+        -o-transition: .15s ease-in;
+    }
+} */
