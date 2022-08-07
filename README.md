@@ -25,7 +25,7 @@ Users are able to:
 
 ### Link
 
-- Live Site URL: [Daily Weather](https://admirable-croquembouche-47179f.netlify.app/)
+- Live Site URL: [Todo List App](https://62efd21a4d1e7c2570c70091--admirable-blancmange-14dc45.netlify.app/)
 
 ## My process
 I started with building the skeleton of the app with HTML only, I then used CSS for the styling of the app.
